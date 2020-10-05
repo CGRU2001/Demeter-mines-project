@@ -9,3 +9,19 @@ div.jumbotron > div.buttons > button{
 div.jumbotron > div.buttons > button:hover{
     background: rgba(0,0,0,0.75);
 }
+div.carrousell{
+    display: flex;
+    justify-content: center;
+
+}
+div.carrousell span{
+    margin: 12.5rem 1rem;
+    padding: 10px;
+    background: rgba(0,0,0,0.25);
+    color: white;
+    transition: all 0.3s ease;
+}
+div.carrousell span:hover{
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
