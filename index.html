@@ -40,14 +40,14 @@ https://commons.wikimedia.org/wiki/File:Activation_of_anti- personnel_landmine_(
         <main>
             <div class="container">
                 <div class="carrousell">
-                    <span id="lastPicture"><</span>
+                    <span id="lastPicture" onclick="slideCarrousell('before')"><</span>
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="https://sites.google.com/site/landminedetection/_/rsrc/1472842829916/antipersonal-mines/AP%20mine.jpg?height=400&width=362" alt="Card image cap">
+                        <img id="img" class="card-img-top" src="https://sites.google.com/site/landminedetection/_/rsrc/1472842829916/antipersonal-mines/AP%20mine.jpg?height=400&width=362" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p id="txt"class="card-text">Un textaco</p>
                         </div>
                     </div>
-                    <span id="nextPicture">
+                    <span id="nextPicture" onclick="slideCarrousell('next')">
                         >
                     </span>
                 </div>

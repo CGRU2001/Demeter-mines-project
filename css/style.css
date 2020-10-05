@@ -12,7 +12,6 @@ div.jumbotron > div.buttons > button:hover{
 div.carrousell{
     display: flex;
     justify-content: center;
-
 }
 div.carrousell span{
     margin: 12.5rem 1rem;
