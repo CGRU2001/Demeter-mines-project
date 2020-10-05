@@ -1,0 +1,5 @@
+div.jumbotron > div.buttons{
+    display: flex;
+    flex-flow: row-reverse;
+
+}
