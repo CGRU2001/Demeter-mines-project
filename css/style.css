@@ -1,5 +1,11 @@
 div.jumbotron > div.buttons{
     display: flex;
     flex-flow: row-reverse;
-
+}
+div.jumbotron > div.buttons > button{
+    margin-left: 1rem;
+    background: rgba(0,0,0,0.45);
+}
+div.jumbotron > div.buttons > button:hover{
+    background: rgba(0,0,0,0.75);
 }
