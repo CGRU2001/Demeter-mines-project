@@ -1,3 +1,6 @@
+div.jumbotron{
+    margin: 0;
+}
 div.jumbotron > div.buttons{
     display: flex;
     flex-flow: row-reverse;
@@ -60,4 +63,8 @@ div.carrousell > div.card > img{
     width: 400px;
     height: auto;
     filter: none;
+}
+footer{
+    background: lightgray;
+    padding: 2rem;
 }

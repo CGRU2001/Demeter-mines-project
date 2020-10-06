@@ -1,59 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Demeter mines</title>
     <!--Importing bootstrap styles-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--Importing bootstrap script-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <!--Importing my own styles-->
     <link rel="stylesheet" href="css/style.css">
     <!--Importing my own js scripts-->
     <script src="js/script.js"></script>
 </head>
+
 <body>
 
 
-        <header>
-            <div class="jumbotron">
-                <h1 class="display-4">Demeter mines project</h1>
-                <div class="buttons">
-                    <button type="button"  class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Land mine, https://en.wikipedia.org/wiki/Land_mine, Wikipedia, retrived 15/1- 2020.
+    <header>
+        <div class="jumbotron">
+            <h1 class="display-4">Demeter mines project</h1>
+            <div class="buttons">
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                    data-placement="bottom"
+                    data-content="Land mine, https://en.wikipedia.org/wiki/Land_mine, Wikipedia, retrived 15/1- 2020.
 Mina, https://sv.wikipedia.org/wiki/Mina, Wikipedia, retrived 15/1-2020.
 How many types of landmines are they?, http://ask.un.org/faq/14489, ask.un, retrived 22/1-2020.
 Facts about land mines, https://www.care.org/emergencies/facts-about-land- mines#Q1, care, retrived 22/1-2020.
 Activation of anti-personnel landmine,
 https://commons.wikimedia.org/wiki/File:Activation_of_anti- personnel_landmine_(animated_diagram).gif, Wikipedia, retrived 5/2-2020.">
-                        Sources
-                    </button>
-                    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Ebba Wolfbrandt & Sally Alnasrallah">
-                        Authors
-                    </button>
+                    Sources
+                </button>
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                    data-placement="bottom" data-content="Ebba Wolfbrandt & Sally Alnasrallah">
+                    Authors
+                </button>
 
-                </div>
             </div>
-        </header>
-        <main id="doc">
-            <div class="container">
-                <div class="carrousell">
-                    <span id="lastPicture" onclick="slideCarrousell('before')">&#10140;</span>
-                    <div class="card">
-                        <img id="img" class="card-img-top" src="https://sites.google.com/site/landminedetection/_/rsrc/1472842829916/antipersonal-mines/AP%20mine.jpg?height=400&width=362" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 id="title">How do mines work?</h6>
-                            <p id="txt"class="card-text">Landmines activate when the pressure plate on the mine is exposed to enough pressure to trigger it, the firing pin releases and strikes the denotator explosive charge, which causes the explosive charge to explode. Then the detonation of the denotator charge trigger the main explosive charge. When triggered, the main charge’s detonation will convert the stored energy into large volume of hot gas. Those gases will expand and form a ‘blast wind’ which will push towards the surface, causing serious injuries as it has transferred huge amounts of energy into anything blocking its path.</p>
-                        </div>
+        </div>
+    </header>
+    <main id="doc">
+        <div class="container">
+            <div class="carrousell">
+                <span id="lastPicture" onclick="slideCarrousell('before')">&#10140;</span>
+                <div class="card">
+                    <img id="img" class="card-img-top"
+                        src="https://sites.google.com/site/landminedetection/_/rsrc/1472842829916/antipersonal-mines/AP%20mine.jpg?height=400&width=362"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h6 id="title">How do mines work?</h6>
+                        <p id="txt" class="card-text">Landmines activate when the pressure plate on the mine is exposed
+                            to enough pressure to trigger it, the firing pin releases and strikes the denotator
+                            explosive charge, which causes the explosive charge to explode. Then the detonation of the
+                            denotator charge trigger the main explosive charge. When triggered, the main charge’s
+                            detonation will convert the stored energy into large volume of hot gas. Those gases will
+                            expand and form a ‘blast wind’ which will push towards the surface, causing serious injuries
+                            as it has transferred huge amounts of energy into anything blocking its path.</p>
                     </div>
-                    <span id="nextPicture" onclick="slideCarrousell('next')">
-                        &#10140;
-                    </span>
                 </div>
-
+                <span id="nextPicture" onclick="slideCarrousell('next')">
+                    &#10140;
+                </span>
             </div>
-        </main>
+
+        </div>
+    </main>
+    <footer>
+        <span>Copyright © 2020 - <a href="https://github.com/CGRU2001">Carlos Guillermo Rodríguez</a>. All rights reserved</span>
+    </footer>
 </body>
+
 </html>
